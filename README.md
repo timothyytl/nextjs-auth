@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my customized Nextjs 14 App Router boilerplate to build web applications with the following basic features:
 
-## Getting Started
+- Navbar section
+- Navbar links with active paths
+- Login and Logout buttons
+- Footer section
 
-First, run the development server:
+## Application Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This Nextjs boilerplate folder structure includes the src folder to house the app folder and its contents for better organization.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The reason for the src folder structure is because it makes better sense to allow the app folder to contain solely the routes/url paths and the src folder to contain all the other miscellaneous files and folders such as components, data, lib/utils folder, etc..
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Special files:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- loading.jsx, not-found.jsx, and error.jsx are components that can be imported into any route folder to manage special rendering conditions.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- All the components' styling are managed mostly by their respective .module.css files
